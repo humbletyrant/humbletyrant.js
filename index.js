@@ -7,7 +7,7 @@
   var hidesnowtime = 0;
 
   var snowdistance = "pageheight";
-// GiftRain.js in Project Storm by NeotiDev | https://github.com/NeotiDev/storm// GiftRain.js in Project Storm by NeotiDev | https://github.com/NeotiDev/storm
+// GiftRain.js in Project Storm by NeotiDev | https://github.com/NeotiDev/storm
 
 
 // GiftRain.js in Project Storm by NeotiDev | https://github.com/NeotiDev/storm
