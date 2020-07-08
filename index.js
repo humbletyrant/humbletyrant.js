@@ -1,4 +1,4 @@
-  var snowsrc="https://loganljohnson.cygo.network/fresources/humbletyranthires.png"
+  var snowsrc="https://loganljohnson.cygo.network/main/wp-content/uploads/2020/07/humbletyranthires-e1594234482431.png"
 
   var no = 10;
 
