@@ -1,4 +1,4 @@
-  var snowsrc="https://loganljohnson.com/HumbleTyrant/humbletyrant.png"
+  var snowsrc="https://loganljohnson.cygo.network/fresources/humbletyranthires.png"
 
   var no = 10;
 
