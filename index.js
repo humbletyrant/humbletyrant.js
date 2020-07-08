@@ -1,5 +1,3 @@
-// GiftRain.js in Project Storm by NeotiDev | https://github.com/NeotiDev/storm
-// This is a fork of GiftRain by HumbleTyrant. Credit for source goes to NeotiDev (neotidev.com)
   var snowsrc="https://loganljohnson.com/HumbleTyrant/humbletyrant.png"
 
   var no = 10;
@@ -7,10 +5,8 @@
   var hidesnowtime = 0;
 
   var snowdistance = "pageheight";
-// GiftRain.js in Project Storm by NeotiDev | https://github.com/NeotiDev/storm
 
 
-// GiftRain.js in Project Storm by NeotiDev | https://github.com/NeotiDev/storm
 
   var ie4up = (document.all) ? 1 : 0;
   var ns6up = (document.getElementById&&!document.all) ? 1 : 0;
@@ -18,7 +14,7 @@
 	function iecompattest(){
 	return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
 	}
-  // GiftRain.js in Project Storm by NeotiDev | https://github.com/NeotiDev/storm
+
 
   var dx, xp, yp;   
   var am, stx, sty;  
@@ -31,7 +27,7 @@
     doc_width = iecompattest().clientWidth;
     doc_height = iecompattest().clientHeight;
   }
-  // GiftRain.js in Project Storm by NeotiDev | https://github.com/NeotiDev/storm
+
 
   dx = new Array();
   xp = new Array();
@@ -52,9 +48,9 @@
       } else {
         document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>");
       }
-    }// GiftRain.js in Project Storm by NeotiDev | https://github.com/NeotiDev/storm
+    }
   }
-// GiftRain.js in Project Storm by NeotiDev | https://github.com/NeotiDev/storm
+
   function snowIE_NS6() { 
     doc_width = ns6up?window.innerWidth-10 : iecompattest().clientWidth-10;
 		doc_height=(window.innerHeight && snowdistance=="windowheight")? window.innerHeight : (ie4up && snowdistance=="windowheight")?  iecompattest().clientHeight : (ie4up && !window.opera && snowdistance=="pageheight")? iecompattest().scrollHeight : iecompattest().offsetHeight;
@@ -69,19 +65,19 @@
       dx[i] += stx[i];
       document.getElementById("dot"+i).style.top=yp[i]+"px";
       document.getElementById("dot"+i).style.left=xp[i] + am[i]*Math.sin(dx[i])+"px";  
-    }// GiftRain.js in Project Storm by NeotiDev | https://github.com/NeotiDev/storm
+    }
     snowtimer=setTimeout("snowIE_NS6()", 10);
-  }// GiftRain.js in Project Storm by NeotiDev | https://github.com/NeotiDev/storm
+  }
 
 	function hidesnow(){
 		if (window.snowtimer) clearTimeout(snowtimer)
 		for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden"
 	}
-// GiftRain.js in Project Storm by NeotiDev | https://github.com/NeotiDev/storm
+
 
 if (ie4up||ns6up){
     snowIE_NS6();
 		if (hidesnowtime>0)
 		setTimeout("hidesnow()", hidesnowtime*1000)
 }
-// GiftRain.js in Project Storm by NeotiDev | https://github.com/NeotiDev/storm
+
